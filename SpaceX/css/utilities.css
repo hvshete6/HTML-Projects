@@ -1,0 +1,8 @@
+/* To store classes which will be repeateadly used  */
+
+.container{
+    /* width: 100%; */
+    width: 1260px;
+    max-width: 90%;
+    margin: 0 auto;
+}

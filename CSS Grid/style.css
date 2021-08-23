@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "sidebar main main content2"
+    "sidebar main main content2"
+    "sidebar content1 content1 content1"
+    "sidebar content1 content1 content1";
+}
+
+.sidebar {
+  background-color: white;
+  grid-area: sidebar;
+}
+
+.main {
+  background-color: pink;
+  grid-area: main;
+}
+.content1 {
+  background-color: green;
+  grid-area: content1;
+}
+.content2 {
+  background-color: blue;
+  grid-area: content2;
+}
+
+/* ////////////////////// SIDEBAR ///////////////////  */
+
+.lorem{
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+}
+
+.list-items{
+    margin-left: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#about {
+    text-decoration: line-through;
+    text-decoration-color: #ff4e4e;
+  }
+  
+ .cart{
+     margin-top: 60px;
+     margin-left: 80px;
+ }
+ .cart-button{
+     width: 120px;
+     height: 40px;
+     border-radius: 30px;
+     background-color: #ff4a4a;
+     border: none;
+     color:#fff;
+ }
+
+
+ /* ////////////////////// MAIN ///////////////////////  */
+ .header {
+     font-size: 4em;
+     position: absolute;
+     top: 130px;
+     font-weight: 900;
+ }
+ 
+ .info{
+     position: absolute;
+     top: 10em;
+     margin-right: 100px;
+ }
+
+
+
+
+@media screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
+    grid-template-areas:
+      "sidebar  "
+      "main "
+      " content1"
+      " content2";
+  }
+  .sidebar{
+      visibility: hidden;
+  }
+}

@@ -1,0 +1,42 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+#section1{
+    background: #000;
+    color: aliceblue;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    letter-spacing: 4px;
+    font-family: 'Georama', sans-serif;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px #45B6CE;
+
+}
+#section2{
+    background: pink;
+    color: black;
+    height: 100vh;
+}
+
+
+/* This Will Set width of scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+/* Scrollbar Track Background */
+::-webkit-scrollbar-track{
+    background: #51E1ED;
+    border-radius: 50px;
+}
+
+/* //the scrollbar which moves up and down on scroll */
+::-webkit-scrollbar-thumb{
+    background: #E03B8B;
+    border-radius: 50px;
+}
